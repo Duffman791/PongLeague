@@ -2,7 +2,7 @@
 
 	<div class='span8'>
 		<h1>R&F Pong League! <small>beta</small></h1>
-		<%= link_to "New Game", new_game_path, class: "btn btn-primary" %>
+		<%= link_to "New League", new_game_path, class: "btn btn-primary" %>
 
 		<ul id='games-list'>
 		<% @games.each do |game| %>
@@ -16,10 +16,6 @@
 
 		    	</ul>
 		    	
-		 <ul id='games-list'>
-		 <h3>Schedule</h3>
-		 	<h4>Upcoming Game</h4>
-		 </ul>
 
           <% result = game.recent_results.limit(1).first %>
           <% if result %>
