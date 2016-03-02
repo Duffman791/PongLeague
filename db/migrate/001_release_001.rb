@@ -37,6 +37,9 @@ class Release001 < ActiveRecord::Migration
     create_table :schedule do |t|
       t.integer :player1_id, null: false
       t.integer :player1_id, null: false
+      t.string :datetime, null: false
+      
+      t.timestamps
   end
 
   def down
